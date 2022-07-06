@@ -3,7 +3,7 @@ FROM jenkins/jenkins:latest
 
 USER root
 
-RUN apt-get install -y curl jq && \ 
+RUN apt-get install -y curl && \ 
     curl https://get.docker.com/ > dockerinstall && \
     chmod 777 dockerinstall && \
     ./dockerinstall && \
