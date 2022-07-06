@@ -9,4 +9,5 @@ RUN apt-get install -y curl jq && \
     ./dockerinstall && \
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
     unzip -o awscliv2.zip && \
-    ./aws/install --update
+    ./aws/install --update && \
+    apt-get install -y jq
